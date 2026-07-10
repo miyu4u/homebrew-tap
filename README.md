@@ -5,7 +5,7 @@ Homebrew formulae maintained by `miyu4u`.
 ## Install
 
 ```bash
-brew tap miyu4u/tap git@github.com:miyu4u/homebrew-tap.git
+brew tap miyu4u/tap https://github.com/miyu4u/homebrew-tap
 brew install miyu4u/tap/recurl
 brew install miyu4u/tap/toss-invest-cli
 ```

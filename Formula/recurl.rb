@@ -1,7 +1,7 @@
 class Recurl < Formula
   desc "Curl-compatible CLI with output formatting and optional browser rendering"
   homepage "https://github.com/miyu4u/recurl"
-  url "git@github.com:miyu4u/recurl.git", branch: "main", using: :git
+  url "https://github.com/miyu4u/recurl", branch: "main", using: :git
   version "0.0.1"
   license "MIT"
 

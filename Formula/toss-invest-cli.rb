@@ -1,9 +1,10 @@
 class TossInvestCli < Formula
   desc "CLI for the Toss Invest OpenAPI"
   homepage "https://github.com/miyu4u/toss-invest-cli"
-  url "git@github.com:miyu4u/toss-invest-cli.git", branch: "main", using: :git
+  url "https://github.com/miyu4u/toss-invest-cli", branch: "main", using: :git
   version "0.0.1"
-
+  license "MIT"
+  
   depends_on "bun"
 
   def install
