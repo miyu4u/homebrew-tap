@@ -5,7 +5,7 @@ Private Homebrew formulae maintained by `miyu4u`.
 ## Install
 
 ```bash
-brew tap miyu4u/tap
+brew tap miyu4u/tap git@github.com:miyu4u/homebrew-tap.git
 brew install miyu4u/tap/recurl
 ```
 
