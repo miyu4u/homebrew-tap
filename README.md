@@ -1,6 +1,6 @@
-# miyu4u Homebrew Tap
+# Homebrew Tap
 
-Private Homebrew formulae maintained by `miyu4u`.
+Homebrew formulae maintained by `miyu4u`.
 
 ## Install
 
@@ -13,6 +13,4 @@ brew install miyu4u/tap/recurl
 
 ### `recurl`
 
-Builds the private [`miyu4u/recurl`](https://github.com/miyu4u/recurl) source with Homebrew's `bun` dependency and installs the compiled `recurl` executable.
-
-The formula fetches the source through GitHub SSH, so the installing user needs access to the private source repository. When `recurl`'s package version changes, update `Formula/recurl.rb`'s `version` and its test expectation in the same tap commit.
+Builds the [`miyu4u/recurl`](https://github.com/miyu4u/recurl) source with Homebrew's `bun` dependency and installs the compiled `recurl` executable.
