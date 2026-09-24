@@ -20,10 +20,6 @@ concurrency:
 permissions:
   contents: read
 
-defaults:
-  run:
-    shell: bash
-
 env:
   HOMEBREW_NO_AUTO_UPDATE: '1'
   HOMEBREW_NO_ANALYTICS: '1'
@@ -35,9 +31,6 @@ jobs:
   prepare:
     name: Verify staged asset set and render formula
     runs-on: ubuntu-latest
-    # GitHub는 draft release 열람에도 push 권한을 요구합니다.
-    permissions:
-      contents: write
     outputs:
       version: ${{ steps.contract.outputs.version }}
     steps:
@@ -140,9 +133,6 @@ jobs:
   native-homebrew:
     name: Native Homebrew verification (${{ matrix.target }})
     needs: prepare
-    # Draft asset 다운로드에 필요한 최소 repository permission입니다.
-    permissions:
-      contents: write
     strategy:
       fail-fast: true
       matrix:
